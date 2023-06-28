@@ -2,8 +2,12 @@ import openai
 import os
 import time
 
-# 将sk-xxxxxxxxxxxxxxxxxxxxxx替换为你的 API Key
-openai.api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxx'
+# 将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 替换成你自己的API key
+openai.api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+# 创建新文件夹
+folder_name = f"splitted_code_{int(time.time())}"
+os.makedirs(folder_name, exist_ok=True)
 
 # 尝试使用不同的编码打开文件
 encodings = ['utf-8', 'latin-1', 'cp1252']
@@ -19,20 +23,37 @@ else:
     print('failed to indentify file encoding format')
     code = ''
 
-# 为应对openai的token长度限制，将代码文件分成多个部分。默认值为每个部分最多包含1000个字符，可自行修改。
-parts = [code[i:i+1000] for i in range(0, len(code), 1000)]
-print('file splitted successfully')
+# 为应对openai的token长度限制，将代码文件分成多个部分。默认值为每个部分最多包含1500个字符，可自行修改。
+parts = []
+if len(code) > 0:
+    lines = code.split('\n')
+    part = ''
+    for line in lines:
+        if len(part) + len(line) > 1500:
+            parts.append(part)
+            part = line + '\n'
+        else:
+            part += line + '\n'
+    if part:
+        parts.append(part)
+print(f'file splitted into {len(parts)} parts successfully')
+
+# 将每个部分写入到新文件夹中的一个新.txt文件中
+for i, part in enumerate(parts):
+    with open(f"{folder_name}/part_{i+1}.txt", 'w', encoding='utf-8') as output_file:
+        output_file.write(part)
 
 annotated_code = ''
 model_engine = 'text-davinci-002'
 print('model engine selected successfully')
 
-# 逐个处理
+start_time = time.time()
 for i, part in enumerate(parts):
-    #以下prompt可以自行修改，支持注释、debug、重构等等功能
-    prompt = f'用中文详细地注释以下代码：\n{part}'
-    print('prompt created successfully')
+    prompt = f'Please provide corresponding Chinese code comments for the following code snippet. Your response should only consist of commented code and should not include any non-code explanations. Here is the code:\n{part}'
 
+    part_time = time.time()
+
+    print(f'Part {i+1}/{len(parts)} started at {time.strftime("%H:%M:%S", time.localtime())}')
     completions = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
@@ -42,13 +63,20 @@ for i, part in enumerate(parts):
         temperature=0.5,
     )
     print(f'Part {i+1}/{len(parts)} annotated successfully')
+    print(f'Time taken for this part: {time.time() - part_time:.2f} seconds')
+    total_time = time.time() - start_time
+    minutes = total_time // 60
+    seconds = total_time % 60
+    print(f'Total time taken: {minutes:.0f} minutes and {seconds:.2f} seconds')
 
     annotated_code += completions.choices[0].text
 
-print('all code annotated successfully')
+print(f'Total time taken: {time.time() - start_time:.2f} seconds')
+
 
 # 将注释后的代码写入带时间戳的文件
+
 output_filename = f'code_out_{int(time.time())}.txt'
-with open(output_filename, 'w') as output_file:
+with open(output_filename, 'w', encoding='utf-8') as output_file:
     output_file.write(annotated_code)
 print(f'file written successfully to {output_filename}')
