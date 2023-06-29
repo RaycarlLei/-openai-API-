@@ -1,6 +1,21 @@
 # README
 
-这是一个用于将大段代码分割成小段，并为每段代码添加注释的Python脚本。此脚本使用OpenAI的GPT-3引擎生成代码的中文注释。以下是脚本主要的工作流程：
+**注意**：要运行这个脚本，你需要一个OpenAI的API密钥，并将其填入到脚本中的适当位置。
+
+## 使用方法（基于Windows 10）
+
+1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/-openai-API-/edit/main/README.md#%E5%AE%89%E8%A3%85python)。
+
+2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，你可以在https://platform.openai.com/apps 获取你的API。
+
+3. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。
+
+4. 运行command.bat。脚本会自动创建一个新的文件夹，并将代码分割成多个部分，每个部分存放在一个单独的.txt文件中。然后，脚本会为每个部分的代码生成注释，并将注释后的代码写入一个新的输出文件中。
+
+5. 查看脚本运行结果。结果会被写入一个带有当前时间的.txt文件中，并且脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
+
+   
+## 脚本工作流程
 
 1. 脚本首先设置OpenAI的API密钥，该密钥用于后续的API调用。
 
@@ -22,16 +37,14 @@
 
 10. 脚本完成后，会显示一个消息框，显示脚本运行所花费的时间。
 
-**注意**：要运行这个脚本，你需要一个OpenAI的API密钥，并将其填入到脚本中的适当位置。
 
-## 使用方法
-
-1. 安装Python（版本3.6或以上）和所需的库（os, time, ctypes, openai, datetime）。
-
-2. 在脚本中填入你的OpenAI API密钥。
-
-3. 将你想要分割并注释的代码写入一个名为'code_in.txt'的文件中，然后放在与此脚本相同的文件夹中。
-
-4. 运行这个脚本。脚本会自动创建一个新的文件夹，并将代码分割成多个部分，每个部分存放在一个单独的.txt文件中。然后，脚本会为每个部分的代码生成注释，并将注释后的代码写入一个新的输出文件中。
-
-5. 查看脚本运行结果。结果会被写入一个带有当前时间的.txt文件中，并且脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
+## 安装python
+1. 打开您的浏览器，访问官方 Python 网站：https://www.python.org/downloads/windows/。
+2.滚动页面并找到适合您的操作系统的最新版本。选择带有 "Windows installer" 标志的版本。
+3.下载 Python 安装程序（.exe 文件）后，双击运行它。
+4.在安装向导中，确保选中 "Add Python to PATH"（将 Python 添加到 PATH）选项。这将允许您在命令提示符下全局访问 Python。
+5.点击 "Customize installation"（自定义安装）按钮，以便选择其他安装选项。您可以按照默认设置继续，或者根据自己的需求进行选择。
+6.在可选功能页面上，确保选中 "pip"（Python 包管理器）和 "tcl/tk and IDLE"（Tcl/Tk 和 IDLE）。这些是常用的 Python 工具和库。
+7.在高级选项页面上，您可以选择修改安装路径或者直接使用默认设置。
+8.单击 "Install"（安装）按钮开始安装过程。
+9.安装完成后，打开命令提示符（按下 Win + R，输入 "cmd"，然后按下回车键）。在命令提示符下，输入 "python --version"（不包括引号）并按下回车键。如果安装成功，命令提示符将显示 Python 的版本号，例如 "Python 3.6.8"。
