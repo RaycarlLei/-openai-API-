@@ -6,7 +6,7 @@ import datetime
 
 
 # 使用你的 API Key
-openai.api_key = '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'
+openai.api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 
 # 获取当前日期和时间
