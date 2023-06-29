@@ -4,7 +4,7 @@
 
 ## 使用方法（基于Windows 10）
 
-1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/-openai-API-/edit/main/README.md#%E5%AE%89%E8%A3%85python)。
+1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/-openai-API-/tree/main#%E5%AE%89%E8%A3%85python)。
 
 2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，你可以在https://platform.openai.com/apps 获取你的API。
 
