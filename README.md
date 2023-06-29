@@ -4,9 +4,9 @@
 
 ## 使用方法（基于Windows 10）
 
-1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/-openai-API-/tree/main#%E5%AE%89%E8%A3%85python)。
+1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E5%AE%89%E8%A3%85python)。
 
-2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/-openai-API-/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
+2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
 3. 将整个项目文件夹下载到本地。
 
