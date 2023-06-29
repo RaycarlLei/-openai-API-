@@ -6,13 +6,13 @@
 
 1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/-openai-API-/tree/main#%E5%AE%89%E8%A3%85python)。
 
-2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，你可以在https://platform.openai.com/apps 获取你的API。
+2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/-openai-API-/edit/main/README.md#%E8%8E%B7%E5%8F%96openai-api-key)
 
-3. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。
+5. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。
 
-4. 运行command.bat。脚本会自动创建一个新的文件夹，并将代码分割成多个部分，每个部分存放在一个单独的.txt文件中。然后，脚本会为每个部分的代码生成注释，并将注释后的代码写入一个新的输出文件中。
+6. 运行command.bat。脚本会自动创建一个新的文件夹，并将代码分割成多个部分，每个部分存放在一个单独的.txt文件中。然后，脚本会为每个部分的代码生成注释，并将注释后的代码写入一个新的输出文件中。
 
-5. 查看脚本运行结果。结果会被写入一个带有当前时间的.txt文件中，并且脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
+7. 查看脚本运行结果。结果会被写入一个带有当前时间的.txt文件中，并且脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
 
    
 ## 脚本工作流程
@@ -37,6 +37,13 @@
 
 10. 脚本完成后，会显示一个消息框，显示脚本运行所花费的时间。
 
+## 获取openai API key
+
+如果你还没有API，你可以在[此链接](https://platform.openai.com/account/api-keys)获取你的API。
+
+注册或者登录后，点击右边的View API keys，然后点击 Create new secret key，给Key起一个名字，然后即可生成新的API Key。
+
+注意生成后立即复制保存这个API Key，这个Key只显示一次，如果忘记保存就需要重新创建。
 
 ## 安装python
 1. 打开您的浏览器，访问官方 Python 网站：https://www.python.org/downloads/windows/。
