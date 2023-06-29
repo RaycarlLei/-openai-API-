@@ -50,15 +50,15 @@
 注意生成后立即复制保存这个API Key，这个Key只显示一次，如果忘记保存就需要重新创建。
 
 ## 安装python
-1. 打开您的浏览器，访问[Python 官网](https://www.python.org/downloads/windows/)。
+1. 访问[Python 官网](https://www.python.org/downloads/windows/)。
 
-2. 滚动页面并找到适合您的操作系统的最新版本。选择带有 "Windows installer" 标志的版本。
+2. 滚动页面并找到适合您的操作系统的版本。此脚本要求3.6或以上的版本。
  
 3. 下载 Python 安装程序（.exe 文件）后，双击运行它。
 
 4. 在安装向导中，确保选中 "Add Python to PATH"（将 Python 添加到 PATH）选项。这将允许您在命令提示符下全局访问 Python。
 
-5. 点击 "Customize installation"（自定义安装）按钮，以便选择其他安装选项。您可以按照默认设置继续，或者根据自己的需求进行选择。
+5. 点击 "Customize installation"（自定义安装）按钮，以便选择其他安装选项。可以按照默认设置一路点继续，也可以根据自己的需求选择。
 
 6. 在可选功能页面上，确保选中 "pip"（Python 包管理器）和 "tcl/tk and IDLE"（Tcl/Tk 和 IDLE）。这些是常用的 Python 工具和库。
 
