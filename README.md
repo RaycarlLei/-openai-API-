@@ -18,7 +18,7 @@
 
 3. 在解压后的文件夹中打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。然后保存并关闭文件。
 
-4. 如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
+4. 如果你还没有OpenAI API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
 5. 在文件夹中打开名为'code_in.txt'的记事本。
 
