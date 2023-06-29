@@ -1,6 +1,6 @@
 # README
 
-**注意**：要运行这个脚本，你需要一个OpenAI的API密钥，并将其填入到脚本中的适当位置。
+**注意**：要运行这个脚本，你需要确保你的网络能连接到openai API。
 
 ## 使用方法（基于Windows 10）
 
@@ -8,7 +8,11 @@
 
 2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/-openai-API-/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
-5. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。
+3. 将整个项目文件夹下载到本地。
+
+4. 打开文件夹，打开code_in.txt
+
+5. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。保存文件然后关闭文件。确保你要注释的代码中没有超过1000字符的代码行。
 
 6. 双击运行command.bat
 
