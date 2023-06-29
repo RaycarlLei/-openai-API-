@@ -13,7 +13,7 @@ openai.api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 now = datetime.datetime.now()
 
 # 将日期和时间格式化为字符串
-formatted_now = now.strftime("%Y %m %d_%H %M %S")
+formatted_now = now.strftime("%Y-%m-%d_%H-%M-%S")
 
 # 使用格式化后的日期和时间来创建文件夹名称
 folder_name = f"splitted_code_{formatted_now}"
