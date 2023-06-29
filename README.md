@@ -11,7 +11,7 @@
 
 1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E5%AE%89%E8%A3%85python)。
 
-2. 点[此连接](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/archive/refs/heads/main.zip)下载此项目的zip压缩包。下课完成后请解压到本地。
+2. 点[此连接](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/archive/refs/heads/main.zip)下载此项目的zip压缩包。下载完成后请解压到本地。
 
 3. 在解压后的文件夹中打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。然后保存并关闭文件。
 
