@@ -43,13 +43,14 @@
 
 ## 获取openai API key
 
-如果你还没有API，你可以在[此链接](https://platform.openai.com/account/api-keys)获取你的API。
+1. 如果你还没有API，你可以在[此链接](https://platform.openai.com/account/api-keys)获取你的API。
 
-注册或者登录后，点击右边的View API keys，然后点击 Create new secret key，给Key起一个名字，然后即可生成新的API Key。
+2. 注册或者登录后，点击右边的View API keys，然后点击 Create new secret key，给Key起一个名字，然后即可生成新的API Key。
 
-注意生成后立即复制保存这个API Key，这个Key只显示一次，如果忘记保存就需要重新创建。
+3. 注意生成后立即复制保存这个API Key，这个Key只显示一次，如果忘记保存就需要重新创建。
 
 ## 安装python
+
 1. 访问[Python 官网](https://www.python.org/downloads/windows/)。
 
 2. 滚动页面并找到适合您的操作系统的版本。此脚本要求3.6或以上的版本。
