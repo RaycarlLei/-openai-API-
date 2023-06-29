@@ -6,21 +6,23 @@
 
 1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E5%AE%89%E8%A3%85python)。
 
-2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
+2. 点[此连接](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/archive/refs/heads/main.zip)下载此项目的zip压缩包。下课完成后请解压到本地。
 
-3. 将整个项目文件夹下载到本地。
+3. 在解压后的文件夹中打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
-4. 打开文件夹，打开code_in.txt
+4. 将整个项目文件夹下载到本地。
 
-5. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。保存文件然后关闭文件。确保你要注释的代码中没有超过1000字符的代码行。
+5. 打开文件夹，打开code_in.txt
 
-6. 双击运行command.bat
+6. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。保存文件然后关闭文件。确保你要注释的代码中没有超过1000字符的代码行。
 
-7. 等待脚本运行。运行日志会print到cmd窗口。
+7. 双击运行command.bat
 
-8. 运行结果会被写入一个名如 “code_out_时间戳.txt” 的文件中。脚本同时会将分割后的原始文件装入一个带时间戳的新文件夹，以方便调试。
+8. 等待脚本运行。运行日志会print到cmd窗口。
 
-9. 脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
+9. 运行结果会被写入一个名如 “code_out_时间戳.txt” 的文件中。脚本同时会将分割后的原始文件装入一个带时间戳的新文件夹，以方便调试。
+
+10. 脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
 
    
 ## 脚本工作流程
