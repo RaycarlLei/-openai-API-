@@ -1,15 +1,25 @@
-public class ZY90132TC029 extends FsTestBase {
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
 
-        List<TmTransDtl> tmTransDtl =  getFsByAgreementNo(agreementNo);
-        Assert.assertEquals(1,tmTransDtl.size());
-        TimeUnit.SECONDS.sleep(3);
-
-
-        Map<String, Object> reqMap = getFLN002Req(tmAgreement, oriBizSeqNo);
-        Message fln002Rsp = sendAsyCarOnline2(JsonUtil.jsonSerializer(reqMap));
-        TmTaskGroup taskGroupRecord3 = new TmTaskGroup();
-        taskGroupRecord3.setBizSeqNo(oriBizSeqNo);
-        List<TmTaskGroup> taskGroupList3 = tmTaskGroupDao.selectList(taskGroupRecord3);
-        taskExec.immediateHandle(taskGroupList3);
-        TimeUnit.SECONDS.sleep(4);
+    TreeNode(int x) {
+        val = x;
     }
+}
+
+public class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+
+        TreeNode left = invertTree(root.left);
+        TreeNode right = invertTree(root.right);
+
+        root.left = right;
+        root.right = left;
+
+        return root;
+    }
+}
