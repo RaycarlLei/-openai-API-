@@ -40,11 +40,19 @@
 
 ## 安装python
 1. 打开您的浏览器，访问官方 Python 网站：https://www.python.org/downloads/windows/。
-2.滚动页面并找到适合您的操作系统的最新版本。选择带有 "Windows installer" 标志的版本。
-3.下载 Python 安装程序（.exe 文件）后，双击运行它。
-4.在安装向导中，确保选中 "Add Python to PATH"（将 Python 添加到 PATH）选项。这将允许您在命令提示符下全局访问 Python。
-5.点击 "Customize installation"（自定义安装）按钮，以便选择其他安装选项。您可以按照默认设置继续，或者根据自己的需求进行选择。
-6.在可选功能页面上，确保选中 "pip"（Python 包管理器）和 "tcl/tk and IDLE"（Tcl/Tk 和 IDLE）。这些是常用的 Python 工具和库。
-7.在高级选项页面上，您可以选择修改安装路径或者直接使用默认设置。
-8.单击 "Install"（安装）按钮开始安装过程。
-9.安装完成后，打开命令提示符（按下 Win + R，输入 "cmd"，然后按下回车键）。在命令提示符下，输入 "python --version"（不包括引号）并按下回车键。如果安装成功，命令提示符将显示 Python 的版本号，例如 "Python 3.6.8"。
+
+2. 滚动页面并找到适合您的操作系统的最新版本。选择带有 "Windows installer" 标志的版本。
+ 
+3. 下载 Python 安装程序（.exe 文件）后，双击运行它。
+
+4. 在安装向导中，确保选中 "Add Python to PATH"（将 Python 添加到 PATH）选项。这将允许您在命令提示符下全局访问 Python。
+
+5. 点击 "Customize installation"（自定义安装）按钮，以便选择其他安装选项。您可以按照默认设置继续，或者根据自己的需求进行选择。
+
+6. 在可选功能页面上，确保选中 "pip"（Python 包管理器）和 "tcl/tk and IDLE"（Tcl/Tk 和 IDLE）。这些是常用的 Python 工具和库。
+
+7. 在高级选项页面上，您可以选择修改安装路径或者直接使用默认设置。
+
+8. 单击 "Install"（安装）按钮开始安装过程。
+
+9. 安装完成后，打开命令提示符（按下 Win + R，输入 "cmd"，然后按下回车键）。在命令提示符下，输入 "python --version"（不包括引号）并按下回车键。如果安装成功，命令提示符将显示 Python 的版本号，例如 "Python 3.6.8"。
