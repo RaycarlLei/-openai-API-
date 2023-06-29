@@ -1,5 +1,7 @@
 # README
 
+此脚本可以自动为你的代码添加注释。解决了chatGPT、new Bing的输入长度限制问题。支持几乎所有编程语言。支持修改prompt以满足更多可能性。
+
 **注意**：要运行这个脚本，你需要确保你的网络能连接到openai API。
 
 ## 使用方法（基于Windows 10）
@@ -8,13 +10,13 @@
 
 2. 点[此连接](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/archive/refs/heads/main.zip)下载此项目的zip压缩包。下课完成后请解压到本地。
 
-3. 在解压后的文件夹中打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
+3. 在解压后的文件夹中打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。然后保存并关闭文件。
 
-4. 将整个项目文件夹下载到本地。
+4. 如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
-5. 打开文件夹，打开code_in.txt
+5. 在文件夹中打开名为'code_in.txt'的记事本。
 
-6. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。保存文件然后关闭文件。确保你要注释的代码中没有超过1000字符的代码行。
+6. 将你想要自动注释的代码复制入 code_in.txt 中。保存然后关闭文件。确保你要注释的代码中没有超过1000字符的代码行。
 
 7. 双击运行command.bat
 
