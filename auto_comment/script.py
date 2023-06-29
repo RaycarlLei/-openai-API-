@@ -57,7 +57,6 @@ for i, part in enumerate(parts):
 
 annotated_code = ''
 
-# model_engine = 'gpt-3.5-turbo-0301'
 model_engine = 'text-davinci-003'
 print(f'model engine {model_engine} selected successfully')
 
