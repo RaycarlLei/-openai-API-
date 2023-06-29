@@ -20,7 +20,7 @@
 
 4. 如果你还没有OpenAI API，请参考[获取API](https://github.com/RaycarlLei/Use-OpenAI-API-to-add-comments-to-your-code/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
-5. 在文件夹中打开名为'code_in.txt'的记事本。
+5. 在文件夹中打开名为'code_in.txt'的记事本。此记事本中有作为示例的代码，如不需要可以删除示例代码。
 
 6. 将你想要自动注释的代码复制入 code_in.txt 中。保存然后关闭文件。确保你要注释的代码中没有超过1000字符的代码行。
 
@@ -32,7 +32,7 @@
 
 10. 脚本完成时会显示一个消息框，显示脚本运行所花费的时间。
 
-11. 打开名如 “code_out_时间戳.txt” 的文件，查看运行结果。
+11. 打开名如 “code_out_时间戳.txt” 的文件，查看添加注释后的代码。
 
    
 ## 脚本工作流程
