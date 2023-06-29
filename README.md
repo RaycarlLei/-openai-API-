@@ -50,7 +50,7 @@
 注意生成后立即复制保存这个API Key，这个Key只显示一次，如果忘记保存就需要重新创建。
 
 ## 安装python
-1. 打开您的浏览器，访问官方 Python 网站：https://www.python.org/downloads/windows/。
+1. 打开您的浏览器，访问[Python 官网](https://www.python.org/downloads/windows/)。
 
 2. 滚动页面并找到适合您的操作系统的最新版本。选择带有 "Windows installer" 标志的版本。
  
