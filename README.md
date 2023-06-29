@@ -6,7 +6,7 @@
 
 1. 安装Python（版本3.6或以上)。如果你还没有安装python，请参考[安装python](https://github.com/RaycarlLei/-openai-API-/tree/main#%E5%AE%89%E8%A3%85python)。
 
-2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/-openai-API-/edit/main/README.md#%E8%8E%B7%E5%8F%96openai-api-key)
+2. 打开script.py，将sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx替换为你的OpenAI API密钥。如果你还没有API，请参考[获取API](https://github.com/RaycarlLei/-openai-API-/tree/main#%E8%8E%B7%E5%8F%96openai-api-key)。
 
 5. 将你想要自动注释的代码复制入名为'code_in.txt'的文件中。
 
